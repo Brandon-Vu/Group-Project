@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="TechTraverse" />
+    <title>Welcome to TechTraverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url(Library\ 3\ am.otf);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0f0f0f;
+        font-family: Helvetica, sans-serif;
+      }
+
+      .header {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        margin-left: 300px;
+        width: 350px;
+        display: inline-block;
+      }
+
+      .nav {
+        text-align: right;
+        position: relative;
+      }
+
+      .nav::before {
+        content: "";
+        position: absolute;
+        margin-left: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background: white;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        font-family: Helvetica;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: teal;
+        text-decoration: underline;
+      }
+
+      .nav-signin {
+        text-align: right;
+      }
+
+      .nav-signin a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .objectPos {
+        position: relative;
+        left: 350px;
+        max-width: 600px;
+        box-shadow: 5px 5px white;
+      }
+
+      .headline {
+        position: absolute;
+        left: 850px;
+        max-width: 600px;
+        font-family: myFont;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+
+      .headline:hover {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      .description {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #ccc;
+        max-width: 600px;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .authorName {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #4ea568;
+        max-width: 600px;
+        font-weight: bold;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .news-story {
+        margin: 20px;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-image {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .news-content {
+        padding: 20px;
+      }
+
+      .news-headline {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .news-description {
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 10px;
+      }
+
+      .news-author {
+        font-size: 14px;
+        color: #4ea568;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="Images/techtraverse logo 4.png"
+          alt="TechTraverse Logo"
+        />
+      </a>
+      <div class="nav" style="margin: 10px">
+        <a class="nav-link" href="TechTraverse_Business.html">BUSINESS</a>
+        <a class="nav-link" href="TechTraverse_Tech.html">TECH</a>
+        <a class="nav-link" href="TechTraverse_Idea.html">IDEA</a>
+        <a class="nav-link" href="TechTraverse_Science.html">SCIENCE</a>
+        <a href="TechTraverse_Login.html" style="margin-left: 450px">SIGN IN</a>
+      </div>
+    </div>
+    <div class="news-story">
+      <img
+        class="news-image"
+        src="Images/Business/Story 3/Image.webp"
+        alt="Tim Cook"
+      />
+      <div class="news-content">
+        <h2 class="news-headline">
+          How to Use Google’s Gemini AI Right Now in Its Bard Chatbot
+        </h2>
+        <p class="news-description">
+          Google just launched its Gemini AI model. Want to try it out for free?
+          A version of the model, called Gemini Pro, is available inside of the
+          Bard chatbot right now. Also, anyone with a Pixel 8 Pro can use a
+          version of Gemini in their AI-suggested text replies with WhatsApp
+          now, and with Gboard in the future.
+        </p>
+
+        <p class="news-description">
+          Only a sliver of Gemini is currently available. Future releases are
+          expected to include multimodal capabilities, where a chatbot processes
+          multiple forms of input and produces outputs in different ways. Just
+          the text-based version has been added to Bard.
+        </p>
+
+        <p class="news-description">
+          Gemini is also only available in English, though Google plans to roll
+          out support for other languages soon. As with previous generative AI
+          updates from Google, Gemini is also not available in the European
+          Union—for now.
+        </p>
+
+        <p class="news-description">
+          Despite the premium-sounding name, the Gemini Pro update for Bard is
+          free to use. With ChatGPT, you can access the older AI models for free
+          as well, but you pay a monthly subscription to access the most recent
+          model, GPT-4. Details on future plans for Gemini remain scarce. Google
+          teased that its further improved model, Gemini Ultra, may arrive in
+          2024, and could initially be available inside an upgraded chatbot
+          called Bard Advanced. No subscription plan has been announced yet, but
+          for comparison, a monthly subscription to ChatGPT Plus with GPT-4
+          costs $20.
+        </p>
+
+        <p class="news-description">
+          Do you already have a Google account? Using Gemini inside of Bard is
+          as simple as visiting the website in your browser and logging in.
+          Google does not allow access to Bard if you are not willing to create
+          an account. Users of Google Workspace accounts may need to switch over
+          to their personal email account to try Gemini.
+        </p>
+
+        <p class="news-description">
+          Remember that all of this is technically an experiment for now, and
+          you might see some software glitches in your chatbot responses. One of
+          the current strengths of Bard is its integration with other Google
+          services, when it actually works. Tag @Gmail in your prompt, for
+          example, to have the chatbot summarize your daily messages, or tag
+          @YouTube to explore topics with videos. Our previous tests of the Bard
+          chatbot showed potential for these integrations, but there are still
+          plenty of kinks to be worked out.
+        </p>
+
+        <p class="news-description">
+          So how is the anticipated Gemini Ultra different from the currently
+          available Gemini Pro model? According to Google, Ultra is its “most
+          capable mode” and is designed to handle complex tasks across text,
+          images, audio, video, and code. The smaller version of the AI model,
+          fitted to work as part of smartphone features, is called Gemini Nano,
+          and it’s available now in the Pixel 8 Pro for WhatsApp replies.
+        </p>
+
+        <p class="news-description">
+          As you experiment with Gemini Pro in Bard, keep in mind the things you
+          likely already know about chatbots, such as their reputation for
+          lying. Not sure where to even start with your prompts? Check out our
+          guide to crafting better prompts for Google’s Bard.
+        </p>
+
+        <p class="news-author">
+          Author: MASON DOUGLAS | Published on: December 14, 2023
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

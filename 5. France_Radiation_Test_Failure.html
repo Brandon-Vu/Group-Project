@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="TechTraverse" />
+    <title>Welcome to TechTraverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url(Library\ 3\ am.otf);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0f0f0f;
+        font-family: Helvetica, sans-serif;
+      }
+
+      .header {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        margin-left: 300px;
+        width: 350px;
+        display: inline-block;
+      }
+
+      .nav {
+        text-align: right;
+        position: relative;
+      }
+
+      .nav::before {
+        content: "";
+        position: absolute;
+        margin-left: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background: white;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        font-family: Helvetica;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: teal;
+        text-decoration: underline;
+      }
+
+      .nav-signin {
+        text-align: right;
+      }
+
+      .nav-signin a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .objectPos {
+        position: relative;
+        left: 350px;
+        max-width: 600px;
+        box-shadow: 5px 5px white;
+      }
+
+      .headline {
+        position: absolute;
+        left: 850px;
+        max-width: 600px;
+        font-family: myFont;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+
+      .headline:hover {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      .description {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #ccc;
+        max-width: 600px;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .authorName {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #4ea568;
+        max-width: 600px;
+        font-weight: bold;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .news-story {
+        margin: 20px;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-image {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .news-content {
+        padding: 20px;
+      }
+
+      .news-headline {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .news-description {
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 10px;
+      }
+
+      .news-author {
+        font-size: 14px;
+        color: #4ea568;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="Images/techtraverse logo 4.png"
+          alt="TechTraverse Logo"
+        />
+      </a>
+      <div class="nav" style="margin: 10px">
+        <a class="nav-link" href="TechTraverse_Business.html">BUSINESS</a>
+        <a class="nav-link" href="TechTraverse_Tech.html">TECH</a>
+        <a class="nav-link" href="TechTraverse_Idea.html">IDEA</a>
+        <a class="nav-link" href="TechTraverse_Science.html">SCIENCE</a>
+        <a href="TechTraverse_Login.html" style="margin-left: 450px">SIGN IN</a>
+      </div>
+    </div>
+    <div class="news-story">
+      <img
+        class="news-image"
+        src="Images/Tech/Story 2/Image.webp"
+        alt="Tim Cook"
+      />
+      <div class="news-content">
+        <h2 class="news-headline">
+          iPhone 12 Faces French Ban Due to Radiation Test Failure
+        </h2>
+        <p class="news-description">
+          Last week, France's regulatory body, the ANFR, banned Apple's iPhone
+          12 due to excessive radiation emissions. The ban has sparked questions
+          about the timing, thoroughness of testing, potential dangers, and the
+          nature of the emitted radiation.
+        </p>
+
+        <p class="news-description">
+          All phones emit radio frequency (RF) radiation, including iPhones. RF
+          is a type of electromagnetic radiation with frequencies between 20 kHz
+          and 300 GHz. The ANFR tested the iPhone 12's RF emissions in "limb"
+          and "trunk" scenarios, where it failed the 0-mm limb test but passed
+          the 5-mm trunk test.
+        </p>
+
+        <p class="news-description">
+          Testing involves measuring Specific Absorption Rate (SAR), indicating
+          energy transferred to tissue. The iPhone 12's 0-mm limb test exceeded
+          the 4 W/kg limit, raising concerns about potential heating effects.
+          The ANFR's database lists results for various phones, including those
+          that failed, such as Motorola Edge and Samsung models.
+        </p>
+
+        <p class="news-description">
+          Apple responded with plans for a software update to comply with French
+          protocols. Other components contributing to RF radiation in the iPhone
+          12 include the Qualcomm X55 5G modem, Wi-Fi/Bluetooth chip, wireless
+          charging tech, and U1 ultra-wideband chip. The ANFR tests are more
+          demanding, employing a 0-mm distance, unlike the standard 5 mm in the
+          US.
+        </p>
+
+        <p class="news-description">
+          Phones' RF emissions vary due to factors like signal strength, RF
+          frontend chips, 5G modem, and software. The Samsung Galaxy S20 Ultra,
+          sharing components with the iPhone 12, emitted significantly less RF
+          radiation in ANFR tests. France's testing standards are among the
+          strictest globally.
+        </p>
+
+        <p class="news-description">
+          RF radiation from phones falls within the non-ionizing electromagnetic
+          spectrum, considered less dangerous than ionizing radiation. Studies
+          on mobile phone use and health effects remain inconclusive, with
+          conflicting findings and outdated research contributing to the
+          uncertainty.
+        </p>
+
+        <p class="news-description">
+          In conclusion, the iPhone 12's failure in France's radiation tests has
+          raised concerns about the potential health impact of RF radiation.
+          Apple's commitment to addressing the issue through a software update
+          reflects the evolving nature of regulations and standards in the
+          mobile phone industry.
+        </p>
+
+        <p class="news-author">
+          Author: STELLA WILLIAMS | Published on: December 14, 2023
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

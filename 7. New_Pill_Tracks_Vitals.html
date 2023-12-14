@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="TechTraverse" />
+    <title>Welcome to TechTraverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url(Library\ 3\ am.otf);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0f0f0f;
+        font-family: Helvetica, sans-serif;
+      }
+
+      .header {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        margin-left: 300px;
+        width: 350px;
+        display: inline-block;
+      }
+
+      .nav {
+        text-align: right;
+        position: relative;
+      }
+
+      .nav::before {
+        content: "";
+        position: absolute;
+        margin-left: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background: white;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        font-family: Helvetica;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: teal;
+        text-decoration: underline;
+      }
+
+      .nav-signin {
+        text-align: right;
+      }
+
+      .nav-signin a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .objectPos {
+        position: relative;
+        left: 350px;
+        max-width: 600px;
+        box-shadow: 5px 5px white;
+      }
+
+      .headline {
+        position: absolute;
+        left: 850px;
+        max-width: 600px;
+        font-family: myFont;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+
+      .headline:hover {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      .description {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #ccc;
+        max-width: 600px;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .authorName {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #4ea568;
+        max-width: 600px;
+        font-weight: bold;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .news-story {
+        margin: 20px;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-image {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .news-content {
+        padding: 20px;
+      }
+
+      .news-headline {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .news-description {
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 10px;
+      }
+
+      .news-author {
+        font-size: 14px;
+        color: #4ea568;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="Images/techtraverse logo 4.png"
+          alt="TechTraverse Logo"
+        />
+      </a>
+      <div class="nav" style="margin: 10px">
+        <a class="nav-link" href="TechTraverse_Business.html">BUSINESS</a>
+        <a class="nav-link" href="TechTraverse_Tech.html">TECH</a>
+        <a class="nav-link" href="TechTraverse_Idea.html">IDEA</a>
+        <a class="nav-link" href="TechTraverse_Science.html">SCIENCE</a>
+        <a href="TechTraverse_Login.html" style="margin-left: 450px">SIGN IN</a>
+      </div>
+    </div>
+    <div class="news-story">
+      <img
+        class="news-image"
+        src="Images/Science/Story 1/Image.webp"
+        alt="Tim Cook"
+      />
+      <div class="news-content">
+        <h2 class="news-headline">
+          This Pill Tracks Your Vitals From the Inside
+        </h2>
+        <p class="news-description">
+          Celero Systems is developing an electronic pill, resembling a
+          biocompatible plastic capsule, that measures vital signs such as heart
+          rate, breathing rate, and core temperature from within the human
+          stomach. Initially designed for home monitoring of ongoing conditions,
+          the pill could potentially serve as an internal alarm system for
+          drug-related overdoses in the future.
+        </p>
+
+        <p class="news-description">
+          In a small clinical trial, the pill was tested on sleep apnea
+          patients, offering an alternative to polysomnography, the current
+          diagnostic standard. The pill, wirelessly transmitting measurements to
+          a laptop, proved nearly as accurate as traditional methods, with
+          minimal discomfort and no reported side effects.
+        </p>
+
+        <p class="news-description">
+          Celero's ingestible device, unlike wearables, directly measures lung
+          movements internally. CEO Ben Pless, with a background in medical
+          implants, sees the ingestible approach as unobtrusive and convenient,
+          providing access to the body without surgery.
+        </p>
+
+        <p class="news-description">
+          The pill's ability to record vitals inside the undulating
+          gastrointestinal tract is noteworthy. The Celero team's signal
+          processing techniques successfully separated heartbeats and breaths
+          from digestive system noise, showcasing the pill's effectiveness in
+          monitoring cardiac and respiratory activity in humans.
+        </p>
+
+        <p class="news-description">
+          Beyond sleep apnea, the pill holds potential applications for
+          unobtrusive at-home monitoring of heart- or breathing-related events
+          in conditions like asthma, cardiac issues, and neuromuscular
+          disorders. The remote tracking capability could enable doctors to mail
+          pills to patients for continuous monitoring.
+        </p>
+
+        <p class="news-description">
+          Celero Systems envisions the pill's transformative impact in detecting
+          drug overdoses, a critical concern amid rising opioid-related deaths.
+          The pill's regular measurements trigger alerts when breaths fall below
+          a threshold, potentially facilitating timely intervention and reducing
+          fatalities.
+        </p>
+
+        <p class="news-description">
+          Preliminary studies on safety and efficacy in human volunteers showed
+          promising results, with participants in a substance use disorder
+          treatment program successfully swallowing the pill without side
+          effects.
+        </p>
+
+        <p class="news-description">
+          While digital tracking pills aren't entirely new, Celero's approach
+          aims to address specific needs, including potentially delivering an
+          overdose-reversing drug. The pill's unobtrusive nature, especially for
+          individuals battling addiction, is seen as an advantage over wearables
+          that can be easily forgotten or misplaced.
+        </p>
+
+        <p class="news-description">
+          Celero Systems plans to refine tests on sleep apnea, expanding
+          participant numbers and exploring longer-term body retention. With
+          additional studies underway, the company aims to bring the
+          transformative monitoring pill to market within the next few years.
+        </p>
+
+        <p class="news-author">
+          Author: ZOEY MITCHELL | Published on: December 14, 2023
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

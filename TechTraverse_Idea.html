@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="TechTraverse" />
+    <title>Welcome to TechTraverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url(Library\ 3\ am.otf);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0f0f0f;
+        font-family: Helvetica, sans-serif;
+      }
+
+      .header {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        margin-left: 300px;
+        width: 350px;
+        display: inline-block;
+      }
+
+      .nav {
+        text-align: right;
+        position: relative;
+      }
+
+      .nav::before {
+        content: "";
+        position: absolute;
+        margin-left: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background: white;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        font-family: Helvetica;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: teal;
+        text-decoration: underline;
+      }
+
+      .nav-signin {
+        text-align: right;
+      }
+
+      .nav-signin a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .objectPos {
+        position: relative;
+        left: 350px;
+        max-width: 600px;
+        box-shadow: 5px 5px white;
+      }
+
+      .headline {
+        position: absolute;
+        left: 850px;
+        max-width: 600px;
+        font-family: myFont;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+
+      .headline:hover {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      .description {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #ccc;
+        max-width: 600px;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .authorName {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #4ea568;
+        max-width: 600px;
+        font-weight: bold;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="Images/techtraverse logo 4.png"
+          alt="TechTraverse Logo"
+        />
+      </a>
+      <div class="nav" style="margin: 10px">
+        <a class="nav-link" href="TechTraverse_Business.html">BUSINESS</a>
+        <a class="nav-link" href="TechTraverse_Tech.html">TECH</a>
+        <a style="color: #736aaa" class="nav-link" href="TechTraverse_Idea.html"
+          >IDEA</a
+        >
+        <a class="nav-link" href="TechTraverse_Science.html">SCIENCE</a>
+        <a href="TechTraverse_Login.html" style="margin-left: 450px">SIGN IN</a>
+      </div>
+    </div>
+    <!-- Story 10 -->
+    <a href="10. Google_Gemini_Pro.html">
+      <img
+        class="objectPos"
+        src="Images/Idea/Story 1/Image.webp"
+        alt="Google Gemini Pro: Free, Release, Pixel 8 Pro Integration"
+        style="top: 30px"
+      />
+    </a>
+    <section>
+      <a href="10. Google_Gemini_Pro.html">
+        <p class="headline" style="position: relative; top: -330px">
+          Google Gemini Pro: Free, Release, Pixel 8 Pro Integration
+        </p>
+      </a>
+      <p class="description" style="position: relative; top: -370px">
+        Metaverse's Evolution: From Technological Aspiration to Spiritual Realm.
+      </p>
+      <p class="authorName" style="position: relative; top: -375px">
+        ELIJAH MARTINEZ
+      </p>
+    </section>
+
+    <!-- Story 11 -->
+    <a href="11. Microsoft_Excel_Rebranding.html">
+      <img
+        class="objectPos"
+        src="Images/Idea/Story 2/Image.webp"
+        alt="How Microsoft Excel Tries to Rebrand Work as Excitement"
+        style="top: -300px"
+      />
+    </a>
+    <section>
+      <a href="11. Microsoft_Excel_Rebranding.html">
+        <p class="headline" style="position: relative; top: -685px">
+          How Microsoft Excel Tries to Rebrand Work as Excitement
+        </p>
+      </a>
+      <p class="description" style="position: relative; top: -730px">
+        Microsoft Excel Turns Mundane Work into World Championships: A Deceptive
+        Rebranding of Office Productivity.
+      </p>
+      <p class="authorName" style="position: relative; top: -745px">
+        PENELOPE CARTER
+      </p>
+    </section>
+
+    <!-- Story 12 -->
+    <a href="12. Google_Search_Box.html">
+      <img
+        class="objectPos"
+        src="Images/Idea/Story 3/Image.webp"
+        alt="Google’s Search Box Changed the Meaning of Information"
+        style="top: -570px"
+      />
+    </a>
+    <section>
+      <a href="12. Google_Search_Box.html">
+        <p class="headline" style="position: relative; top: -965px">
+          Google’s Search Box Changed the Meaning of Information
+        </p>
+      </a>
+      <p class="description" style="position: relative; top: -1005px">
+        Google’s Answer Box and the Twilight of Context: How Search Engines
+        Shape Our Quest for Information
+      </p>
+      <p class="authorName" style="position: relative; top: -1010px">
+        OLIVER ADAMS
+      </p>
+    </section>
+  </body>
+</html>

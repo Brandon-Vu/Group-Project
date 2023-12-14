@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="TechTraverse" />
+    <title>Welcome to TechTraverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url(Library\ 3\ am.otf);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0f0f0f;
+        font-family: Helvetica, sans-serif;
+      }
+
+      .header {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        margin-left: 300px;
+        width: 350px;
+        display: inline-block;
+      }
+
+      .nav {
+        text-align: right;
+        position: relative;
+      }
+
+      .nav::before {
+        content: "";
+        position: absolute;
+        margin-left: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background: white;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        font-family: Helvetica;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: teal;
+        text-decoration: underline;
+      }
+
+      .nav-signin {
+        text-align: right;
+      }
+
+      .nav-signin a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .objectPos {
+        position: relative;
+        left: 350px;
+        max-width: 600px;
+        box-shadow: 5px 5px white;
+      }
+
+      .headline {
+        position: absolute;
+        left: 850px;
+        max-width: 600px;
+        font-family: myFont;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+
+      .headline:hover {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      .description {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #ccc;
+        max-width: 600px;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .authorName {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #4ea568;
+        max-width: 600px;
+        font-weight: bold;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .news-story {
+        margin: 20px;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-image {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .news-content {
+        padding: 20px;
+      }
+
+      .news-headline {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .news-description {
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 10px;
+      }
+
+      .news-author {
+        font-size: 14px;
+        color: #4ea568;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="Images/techtraverse logo 4.png"
+          alt="TechTraverse Logo"
+        />
+      </a>
+      <div class="nav" style="margin: 10px">
+        <a class="nav-link" href="TechTraverse_Business.html">BUSINESS</a>
+        <a class="nav-link" href="TechTraverse_Tech.html">TECH</a>
+        <a class="nav-link" href="TechTraverse_Idea.html">IDEA</a>
+        <a class="nav-link" href="TechTraverse_Science.html">SCIENCE</a>
+        <a href="TechTraverse_Login.html" style="margin-left: 450px">SIGN IN</a>
+      </div>
+    </div>
+    <div class="news-story">
+      <img
+        class="news-image"
+        src="Images/236838_Fitbit_Charge_6_AKrales_0180.png"
+        alt="Tim Cook"
+      />
+      <div class="news-content">
+        <h2 class="news-headline">
+          Apple’s “Scary Fast” Showcase: Major Announcements
+        </h2>
+        <p class="news-description">
+          The sense of introspection regarding Fitbit's integration into Google
+          over the past year. The Fitbit Charge 6, introduced as a potential
+          return to form, is examined with a critical lens.
+        </p>
+
+        <p class="news-description">
+          The reintroduction of the side button, absent in the Charge 5, becomes
+          a focal point. Disappointingly, the button turns out to be a haptic
+          one, lacking the satisfying click of a mechanical button. Despite
+          functionality, the author laments the absence of the beloved physical
+          button experience, citing potential usability concerns for those with
+          limited dexterity.
+        </p>
+
+        <p class="news-description">
+          The Charge 6's fitness and health tracking capabilities receive
+          praise, aligning with Fitbit's reputation in this domain. However, GPS
+          tracking is deemed inferior to competitors like Garmin, occasionally
+          overreporting runs. The addition of gym equipment integration is
+          acknowledged as a positive, despite limited compatibility.
+        </p>
+
+        <p class="news-description">
+          The software, now bearing Google's influence, triggers mixed
+          reactions. Legacy Fitbit users are required to migrate to a Google
+          Account, a process causing discontent. The app redesign, reminiscent
+          of Material You, faces criticism from longtime users for eliminating
+          features and reducing readability. The author notes Google's
+          responsiveness to user feedback but highlights instances that could
+          have been avoided.
+        </p>
+
+        <p class="news-description">
+          The Charge 6's app selection, featuring Google Maps, YouTube Music,
+          and Google Wallet, is scrutinized. The imposition of a $11 monthly
+          subscription for YouTube Music and limited app choices raise concerns.
+          The utilitarian nature of Google Wallet and Google Maps on the small
+          screen is acknowledged.
+        </p>
+
+        <p class="news-description">
+          Despite reservations, the author appreciates the Charge 6's existence
+          in a market increasingly favoring smartwatches. However, the $160
+          price tag is deemed high, especially considering subscription costs.
+          The success of the Charge 6 is seen as contingent on users embracing
+          Google's vision for wearables, acknowledging the ongoing
+          Google-fication of Fitbit. The author reflects on the shifting
+          landscape while expressing a nostalgic sentiment for the Fitbit of
+          old.
+        </p>
+
+        <p class="news-author">
+          Author: VICTORIA SONG | Published on: December 14, 2023
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="TechTraverse" />
+    <title>Welcome to TechTraverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url(Library\ 3\ am.otf);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0f0f0f;
+        font-family: Helvetica, sans-serif;
+      }
+
+      .header {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        margin-left: 300px;
+        width: 350px;
+        display: inline-block;
+      }
+
+      .nav {
+        text-align: right;
+        position: relative;
+      }
+
+      .nav::before {
+        content: "";
+        position: absolute;
+        margin-left: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background: white;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        font-family: Helvetica;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: teal;
+        text-decoration: underline;
+      }
+
+      .nav-signin {
+        text-align: right;
+      }
+
+      .nav-signin a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .objectPos {
+        position: relative;
+        left: 350px;
+        max-width: 600px;
+        box-shadow: 5px 5px white;
+      }
+
+      .headline {
+        position: absolute;
+        left: 850px;
+        max-width: 600px;
+        font-family: myFont;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+
+      .headline:hover {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      .description {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #ccc;
+        max-width: 600px;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .authorName {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #4ea568;
+        max-width: 600px;
+        font-weight: bold;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .news-story {
+        margin: 20px;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-image {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .news-content {
+        padding: 20px;
+      }
+
+      .news-headline {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .news-description {
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 10px;
+      }
+
+      .news-author {
+        font-size: 14px;
+        color: #4ea568;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="Images/techtraverse logo 4.png"
+          alt="TechTraverse Logo"
+        />
+      </a>
+      <div class="nav" style="margin: 10px">
+        <a class="nav-link" href="TechTraverse_Business.html">BUSINESS</a>
+        <a class="nav-link" href="TechTraverse_Tech.html">TECH</a>
+        <a class="nav-link" href="TechTraverse_Idea.html">IDEA</a>
+        <a class="nav-link" href="TechTraverse_Science.html">SCIENCE</a>
+        <a href="TechTraverse_Login.html" style="margin-left: 450px">SIGN IN</a>
+      </div>
+    </div>
+    <div class="news-story">
+      <img
+        class="news-image"
+        src="Images/Idea/Story 2/Image.webp"
+        alt="Tim Cook"
+      />
+      <div class="news-content">
+        <h2 class="news-headline">
+          How Microsoft Excel Tries to Rebrand Work as Excitement
+        </h2>
+        <p class="news-description">
+          The article delves into the unexpected popularity of Microsoft Excel
+          in unconventional contexts, such as the World Excel Championships
+          broadcasted by ESPN2. It traces the history of spreadsheet software
+          from VisiCalc to Lotus 1-2-3 and Microsoft Excel, highlighting their
+          impact on personal computing and business applications.
+        </p>
+
+        <p class="news-description">
+          The author explores Excel's dominance in the realm of spreadsheet
+          software, emphasizing its marketing as a time-saving tool for business
+          efficiency. The article notes Excel's role in data visualization,
+          offering a variety of chart types through its "Chart Wizard." Despite
+          its widespread use, Excel is portrayed as a symbol of mundane office
+          work and workplace ennui.
+        </p>
+
+        <p class="news-description">
+          The article scrutinizes the disparity between the flashy infographics
+          we consume and the clinical Excel infographics created at work. It
+          critiques the aspirational deception embedded in workplace culture,
+          where mundane tasks are rebranded as exciting through advertisements
+          and events like the World Excel Championships.
+        </p>
+
+        <p class="news-description">
+          The author suggests that the embellishment of banal business practices
+          is inherent in spreadsheet software branding, using names like "Chart
+          Wizard" and "Function Wizard" to imply magic and whimsy. The article
+          also touches on the popularization of analytics dashboards, comparing
+          them to luxury car dashboards to evoke the thrill of speed from the
+          desk-bound environment.
+        </p>
+
+        <p class="news-description">
+          In conclusion, the article advocates for reclaiming joy in software
+          use, highlighting creative and inefficient uses of Excel, such as
+          retro console games and artistic endeavors, as sources of genuine joy
+          unburdened by the rhetoric of productivity.
+        </p>
+
+        <p class="news-author">
+          Author: PENELOPE CARTER | Published on: December 14, 2023
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

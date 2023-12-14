@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="TechTraverse" />
+    <title>Welcome to TechTraverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url(Library\ 3\ am.otf);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0f0f0f;
+        font-family: Helvetica, sans-serif;
+      }
+
+      .header {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        margin-left: 300px;
+        width: 350px;
+        display: inline-block;
+      }
+
+      .nav {
+        text-align: right;
+        position: relative;
+      }
+
+      .nav::before {
+        content: "";
+        position: absolute;
+        margin-left: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background: white;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        font-family: Helvetica;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: teal;
+        text-decoration: underline;
+      }
+
+      .nav-signin {
+        text-align: right;
+      }
+
+      .nav-signin a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .objectPos {
+        position: relative;
+        left: 350px;
+        max-width: 600px;
+        box-shadow: 5px 5px white;
+      }
+
+      .headline {
+        position: absolute;
+        left: 850px;
+        max-width: 600px;
+        font-family: myFont;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+
+      .headline:hover {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      .description {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #ccc;
+        max-width: 600px;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .authorName {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #4ea568;
+        max-width: 600px;
+        font-weight: bold;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .news-story {
+        margin: 20px;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-image {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .news-content {
+        padding: 20px;
+      }
+
+      .news-headline {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .news-description {
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 10px;
+      }
+
+      .news-author {
+        font-size: 14px;
+        color: #4ea568;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="Images/techtraverse logo 4.png"
+          alt="TechTraverse Logo"
+        />
+      </a>
+      <div class="nav" style="margin: 10px">
+        <a class="nav-link" href="TechTraverse_Business.html">BUSINESS</a>
+        <a class="nav-link" href="TechTraverse_Tech.html">TECH</a>
+        <a class="nav-link" href="TechTraverse_Idea.html">IDEA</a>
+        <a class="nav-link" href="TechTraverse_Science.html">SCIENCE</a>
+        <a href="TechTraverse_Login.html" style="margin-left: 450px">SIGN IN</a>
+      </div>
+    </div>
+    <div class="news-story">
+      <img
+        class="news-image"
+        src="Images/Science/Story 2/Image.webp"
+        alt="Tim Cook"
+      />
+      <div class="news-content">
+        <h2 class="news-headline">
+          AI Generates Antibodies Beyond Human Imagination
+        </h2>
+        <p class="news-description">
+          LabGenius, led by founder and CEO James Field, is utilizing artificial
+          intelligence (AI) to revolutionize the engineering of medical
+          antibodies at its facility in South London. Unlike the slow and
+          intricate process conducted by human protein designers, LabGenius
+          employs machine learning algorithms, DNA sequencing machines, and
+          automated robotic systems to largely automate the antibody discovery
+          process.
+        </p>
+
+        <p class="news-description">
+          Antibodies, the body's response to disease, are synthetic in
+          pharmaceuticals to treat conditions like cancer. The traditional
+          process involves sifting through millions of potential amino acid
+          combinations, making experimental adjustments, and hoping for improved
+          characteristics without unintended consequences.
+        </p>
+
+        <p class="news-description">
+          LabGenius's approach begins with human scientists identifying a search
+          space for potential antibodies. A machine learning model, with minimal
+          human input, explores this space, designing over 700 initial options
+          from a pool of 100,000 potential antibodies. The process involves
+          automated testing, growth of antibodies based on genetic sequences,
+          and biological assays on diseased tissue samples.
+        </p>
+
+        <p class="news-description">
+          Experimental results are fed back into the machine learning model,
+          refining its understanding of the antibody design space. Unlike
+          conventional methods, LabGenius's approach avoids the pitfalls of
+          endless minor tweaks that may compromise overall effectiveness.
+        </p>
+
+        <p class="news-description">
+          The automated process takes just six weeks from problem setup to the
+          completion of the first antibody batch, with unexpected and
+          counterintuitive solutions emerging more quickly than traditional
+          methods. LabGenius, having raised $28 million in funding, is exploring
+          partnerships with pharmaceutical companies and envisions extending the
+          automated approach to other forms of drug discovery.
+        </p>
+
+        <p class="news-description">
+          James Field emphasizes that this AI-powered recipe for better care
+          results in more effective antibodies with fewer side effects than
+          those designed by humans. The approach identifies distinct and often
+          counterintuitive molecules that may lead to better patient outcomes.
+        </p>
+
+        <p class="news-author">
+          Author: HENRY FOSTER| Published on: December 14, 2023
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

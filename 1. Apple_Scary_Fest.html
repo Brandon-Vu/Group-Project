@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="TechTraverse" />
+    <title>Welcome to TechTraverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url(Library\ 3\ am.otf);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0f0f0f;
+        font-family: Helvetica, sans-serif;
+      }
+
+      .header {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        margin-left: 300px;
+        width: 350px;
+        display: inline-block;
+      }
+
+      .nav {
+        text-align: right;
+        position: relative;
+      }
+
+      .nav::before {
+        content: "";
+        position: absolute;
+        margin-left: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background: white;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        font-family: Helvetica;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: teal;
+        text-decoration: underline;
+      }
+
+      .nav-signin {
+        text-align: right;
+      }
+
+      .nav-signin a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .objectPos {
+        position: relative;
+        left: 350px;
+        max-width: 600px;
+        box-shadow: 5px 5px white;
+      }
+
+      .headline {
+        position: absolute;
+        left: 850px;
+        max-width: 600px;
+        font-family: myFont;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+
+      .headline:hover {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      .description {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #ccc;
+        max-width: 600px;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .authorName {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #4ea568;
+        max-width: 600px;
+        font-weight: bold;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .news-story {
+        margin: 20px;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-image {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .news-content {
+        padding: 20px;
+      }
+
+      .news-headline {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .news-description {
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 10px;
+      }
+
+      .news-author {
+        font-size: 14px;
+        color: #4ea568;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="Images/techtraverse logo 4.png"
+          alt="TechTraverse Logo"
+        />
+      </a>
+      <div class="nav" style="margin: 10px">
+        <a class="nav-link" href="TechTraverse_Business.html">BUSINESS</a>
+        <a class="nav-link" href="TechTraverse_Tech.html">TECH</a>
+        <a class="nav-link" href="TechTraverse_Idea.html">IDEA</a>
+        <a class="nav-link" href="TechTraverse_Science.html">SCIENCE</a>
+        <a href="TechTraverse_Login.html" style="margin-left: 450px">SIGN IN</a>
+      </div>
+    </div>
+    <div class="news-story">
+      <img class="news-image" src="Images/image__4_.png" alt="Tim Cook" />
+      <div class="news-content">
+        <h2 class="news-headline">
+          Apple’s “Scary Fast” Showcase: Major Announcements
+        </h2>
+
+        <p class="news-description">
+          Apple’s “Scary Fast” showcase has come to a close. During the launch
+          event, Apple took the wraps off of some brand-new Macs that come
+          equipped with the latest version of the company’s in-house chip.
+        </p>
+
+        <p class="news-description">
+          If you’re curious about all the new products, here’s a roundup of the
+          major announcements from the event.
+        </p>
+
+        <p class="news-description">
+          <strong>A more powerful line of M3 chips</strong>
+        </p>
+
+        <p class="news-description">
+          As expected, Apple’s M3 chips took the spotlight during this month’s
+          event. The new lineup includes the M3, M3 Pro, and M3 Max chips, which
+          Apple says mark the “first personal computer chips” made using the
+          more efficient 3-nanometer process.
+        </p>
+
+        <p class="news-description">
+          In addition to offering a “faster and more efficient CPU,” the trio of
+          chips comes with an updated GPU that supports ray tracing, mesh
+          shading, and Dynamic Caching — a feature that optimizes the amount of
+          memory the device uses during tasks.
+        </p>
+
+        <p class="news-description">
+          Apple’s M3 chips offer up to 128GB of unified memory, with the most
+          powerful M3 Max chip coming with up to 92 billion transistors, a
+          40-core GPU, and a 16-core CPU.
+        </p>
+
+        <p class="news-description">
+          <strong>A refreshed 24-inch iMac with an M3 chip</strong>
+        </p>
+
+        <p class="news-description">
+          The new 24-inch iMac is getting an M3-flavored upgrade that Apple says
+          offers two times faster performance than its M1-equipped predecessor.
+          Along with the new chip, the refreshed iMac features a 4.5K Retina
+          display with more than 1 billion colors, support for Wi-Fi 6E, and a
+          1080p webcam.
+        </p>
+
+        <p class="news-description">
+          The iMac also offers up to 24GB of unified memory and comes in seven
+          colors: green, yellow, orange, pink, purple, blue, and silver. There
+          are also color-matched accessories that come with the iMac, but they
+          still feature Lightning connectors.
+        </p>
+
+        <p class="news-description">
+          The 24-inch iMac costs $1,299 with an eight-core CPU or $1,499 with a
+          10-core chip. You can preorder it starting today, with availability
+          starting on November 7th.
+        </p>
+
+        <p class="news-description">
+          <strong
+            >The 14- and 16-inch MacBook Pros get a big M3-powered boost</strong
+          >
+        </p>
+
+        <p class="news-description">
+          The iMac isn’t the only device getting an M3-powered upgrade. Apple
+          also announced a new pair of 14- and 16-inch MacBook Pro models that
+          come with either the M3 Pro chip or the higher-end M3 Max.
+        </p>
+
+        <p class="news-description">
+          Both laptops feature a Mini LED display, a 1080p camera, a six-speaker
+          sound system, 22 hours of battery life, and up to 128GB of RAM.
+          They’re also available in a space black finish with a new anodization
+          process that’s supposed to help reduce fingerprints as well as a
+          silver option.
+        </p>
+
+        <p class="news-description">
+          While the 14-inch MacBook Pro with an M3 Pro chip starts at $1,999,
+          the 16-inch M3 Pro model starts at $2,499. These MacBook Pro models
+          are available to preorder today and will become available on November
+          7th.
+        </p>
+
+        <p class="news-description">
+          <strong>An entry-level MacBook Pro that ditches the Touch Bar</strong>
+        </p>
+
+        <p class="news-author">
+          Author: EMMA ROTH | Published on: December 14, 2023
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

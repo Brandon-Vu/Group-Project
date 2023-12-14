@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="TechTraverse" />
+    <title>Welcome to TechTraverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url(Library\ 3\ am.otf);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0f0f0f;
+        font-family: Helvetica, sans-serif;
+      }
+
+      .header {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        margin-left: 300px;
+        width: 350px;
+        display: inline-block;
+      }
+
+      .nav {
+        text-align: right;
+        position: relative;
+      }
+
+      .nav::before {
+        content: "";
+        position: absolute;
+        margin-left: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background: white;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        font-family: Helvetica;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: teal;
+        text-decoration: underline;
+      }
+
+      .nav-signin {
+        text-align: right;
+      }
+
+      .nav-signin a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .objectPos {
+        position: relative;
+        left: 350px;
+        max-width: 600px;
+        box-shadow: 5px 5px white;
+      }
+
+      .headline {
+        position: absolute;
+        left: 850px;
+        max-width: 600px;
+        font-family: myFont;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+
+      .headline:hover {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      .description {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #ccc;
+        max-width: 600px;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .authorName {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #4ea568;
+        max-width: 600px;
+        font-weight: bold;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .news-story {
+        margin: 20px;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-image {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .news-content {
+        padding: 20px;
+      }
+
+      .news-headline {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .news-description {
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 10px;
+      }
+
+      .news-author {
+        font-size: 14px;
+        color: #4ea568;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="Images/techtraverse logo 4.png"
+          alt="TechTraverse Logo"
+        />
+      </a>
+      <div class="nav" style="margin: 10px">
+        <a class="nav-link" href="TechTraverse_Business.html">BUSINESS</a>
+        <a class="nav-link" href="TechTraverse_Tech.html">TECH</a>
+        <a class="nav-link" href="TechTraverse_Idea.html">IDEA</a>
+        <a class="nav-link" href="TechTraverse_Science.html">SCIENCE</a>
+        <a href="TechTraverse_Login.html" style="margin-left: 450px">SIGN IN</a>
+      </div>
+    </div>
+    <div class="news-story">
+      <img
+        class="news-image"
+        src="Images/Business/Story 2/Image.webp"
+        alt="Tim Cook"
+      />
+      <div class="news-content">
+        <h2 class="news-headline">
+          The Generative AI Copyright Fight Is Just Getting Started L
+        </h2>
+        <p class="news-description">
+          The biggest fight of the generative AI revolution is headed to the
+          courtroom—and no, it’s not about the latest boardroom drama at OpenAI.
+          Book authors, artists, and coders are challenging the practice of
+          teaching AI models to replicate their skills using their own work as a
+          training manual.
+        </p>
+
+        <p class="news-description">
+          The debate centers on the billions of works underpinning the
+          impressive wordsmithery of tools like ChatGPT, the coding prowess of
+          Github’s Copilot, and artistic flair of image generators like that of
+          startup Midjourney. Most of the works used to train the underlying
+          algorithms were created by people, and many of them are protected by
+          copyright.
+        </p>
+
+        <p class="news-description">
+          AI builders have largely assumed that using copyrighted material as
+          training data is perfectly legal under the umbrella of “fair
+          use”—after all, they’re only borrowing the work to extract statistical
+          signals from it, not trying to pass it off as their own. But as image
+          generators and other tools have proven able to impressively mimic
+          works in their training data, and the scale and value of training data
+          has become clear, creators are increasingly crying foul.
+        </p>
+
+        <p class="news-description">
+          At LiveWIRED in San Francisco, the 30th anniversary event for WIRED
+          magazine, two leaders of that nascent resistance sparred with a
+          defender of the rights of AI companies to develop the technology
+          unencumbered. Did they believe AI training is fair use? “The answer is
+          no, I do not,” said Mary Rasenberger, CEO of the Authors Guild, which
+          represents book authors and is suing both OpenAI and its primary
+          backer, Microsoft, for violating the copyright of its members.
+        </p>
+
+        <p class="news-description">
+          <strong>Existential Risk</strong>
+        </p>
+
+        <p class="news-description">
+          At the core of the Authors Guild’s complaint is that OpenAI and
+          others’ use of their material ultimately produces competing work when
+          users ask a chatbot to spit out a poem or image. “This is a highly
+          commercial use, and the harm is very clear,” Rasenberger said. “It
+          could really destroy the profession of writing. That’s why we’re in
+          this case.” The Authors Guild, which is building a tool that will help
+          generative AI companies pay to license its members’ works, believes
+          there can be perfectly ethical ways to train AI. “It’s very simple:
+          get permission,” she said. In most cases, permission will come for a
+          fee.
+        </p>
+
+        <p class="news-description">
+          Mike Masnick, CEO of the Techdirt blog and also the Copia Institute, a
+          tech policy think tank, has a different view. “I’m going to say the
+          opposite of everything Mary just said,” he said. Generative AI is fair
+          use, he argued, noting the similarities of the recent legal disputes
+          with past lawsuits, some involving the Author’s Guild, in which
+          indexing creative works so that search engines could efficiently find
+          them survived challenges.
+        </p>
+
+        <p class="news-description">
+          A win for artist groups would not necessarily be of much help to
+          individual writers, Masnick added, calling the very concept of
+          copyright a scheme that was intended to enrich publishers, rather than
+          protect artists. He referenced what he called a “corrupt” system of
+          music licensing that sends little value to its creators.
+        </p>
+
+        <p class="news-description">
+          While any future courtroom verdicts will likely depend on legal
+          arguments over fair use, Matthew Butterick, a lawyer who has filed a
+          number of lawsuits against generative AI companies, says the debate is
+          really about tech companies that are trying to accrue more power—and
+          hold onto it. “They’re not competing to see who can be the richest
+          anymore; they’re competing to be the most powerful,” he said. “What
+          they don’t want is for people with copyrights to have a veto over what
+          they want to do.”
+        </p>
+
+        <p class="news-description">
+          Masnick responded that he was also concerned about who gains power
+          from AI, arguing that requiring tech companies to pay artists would
+          further entrench the largest AI players by making it too expensive for
+          insurgents to train their systems.
+        </p>
+
+        <p class="news-description">
+          Rasenberger scoffed at the suggestion of a balance of power between
+          tech players and the authors she represents, comparing the $20,000 per
+          year average earnings for full-time authors to the recent $90 billion
+          valuation of OpenAI. “They’ve got the money. The artist community does
+          not,” she said.
+        </p>
+
+        <p class="news-author">
+          Author: ISABELLA HARPER | Published on: December 14, 2023
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

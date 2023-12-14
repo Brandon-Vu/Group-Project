@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="TechTraverse" />
+    <title>Welcome to TechTraverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url(Library\ 3\ am.otf);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0f0f0f;
+        font-family: Helvetica, sans-serif;
+      }
+
+      .header {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        margin-left: 300px;
+        width: 350px;
+        display: inline-block;
+      }
+
+      .nav {
+        text-align: right;
+        position: relative;
+      }
+
+      .nav::before {
+        content: "";
+        position: absolute;
+        margin-left: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background: white;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        font-family: Helvetica;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: teal;
+        text-decoration: underline;
+      }
+
+      .nav-signin {
+        text-align: right;
+      }
+
+      .nav-signin a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .objectPos {
+        position: relative;
+        left: 350px;
+        max-width: 600px;
+        box-shadow: 5px 5px white;
+      }
+
+      .headline {
+        position: absolute;
+        left: 850px;
+        max-width: 600px;
+        font-family: myFont;
+        font-size: 50px;
+        color: white;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+
+      .headline:hover {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      .description {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #ccc;
+        max-width: 600px;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .authorName {
+        position: absolute;
+        left: 850px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #4ea568;
+        max-width: 600px;
+        font-weight: bold;
+        text-shadow: 5px 2px #2e2e2e;
+      }
+      .news-story {
+        margin: 20px;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-image {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .news-content {
+        padding: 20px;
+      }
+
+      .news-headline {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .news-description {
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 10px;
+      }
+
+      .news-author {
+        font-size: 14px;
+        color: #4ea568;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="Images/techtraverse logo 4.png"
+          alt="TechTraverse Logo"
+        />
+      </a>
+      <div class="nav" style="margin: 10px">
+        <a class="nav-link" href="TechTraverse_Business.html">BUSINESS</a>
+        <a class="nav-link" href="TechTraverse_Tech.html">TECH</a>
+        <a class="nav-link" href="TechTraverse_Idea.html">IDEA</a>
+        <a class="nav-link" href="TechTraverse_Science.html">SCIENCE</a>
+        <a href="TechTraverse_Login.html" style="margin-left: 450px">SIGN IN</a>
+      </div>
+    </div>
+    <div class="news-story">
+      <img
+        class="news-image"
+        src="Images/Tech/Story 3/Image.webp"
+        alt="Tim Cook"
+      />
+      <div class="news-content">
+        <h2 class="news-headline">
+          The Cybertruck Must Be Huge—or It Will Dig Tesla’s Grave
+        </h2>
+        <p class="news-description">
+          Stupid, divisive, and unconventional, the Cybertruck faces skepticism
+          similar to the Hummer, yet with 2 million preorders, it could bring
+          substantial revenue. The $21,000 price hike raises concerns, and with
+          production delays and limited global availability, achieving Tesla's
+          ambitious sales targets poses challenges.
+        </p>
+
+        <p class="news-description">
+          Despite Elon Musk's optimism about Cybertruck demand, landing even 15%
+          of reservationists seems optimistic. The vehicle's delayed launch and
+          non-compliance with safety regulations outside the US, Canada, and
+          Mexico impact its market reach. Competitors like Ford, GM, Stellantis,
+          and Rivian offer alternatives, some at lower prices.
+        </p>
+
+        <p class="news-description">
+          The $21,000 price increase on initial promises might dampen demand,
+          and the Cybertruck's unique design may limit its appeal to traditional
+          pickup buyers. Analysts question if the vehicle, considered
+          "outlandish," can succeed in the American pickup market that values
+          function over form.
+        </p>
+
+        <p class="news-description">
+          Musk acknowledges production challenges, predicting "enormous
+          challenges in getting to volume production." The inherently high-cost
+          Cybertruck requires significant sales volume to cover R&D costs. Even
+          a traditional car might need 200,000 units per year to cover design
+          costs, adding pressure on Cybertruck sales.
+        </p>
+
+        <p class="news-description">
+          The Cybertruck's design, inspired by 1960s-1970s wedge cars, differs
+          from Tesla's usual sleek aesthetics. While unique, critics have
+          described it as "Frankenstein DeLorean," raising concerns about build
+          quality. Elon Musk's projection of the Cybertruck as a vehicle for
+          Mars colonization adds to its unconventional image.
+        </p>
+
+        <p class="news-description">
+          Despite Tesla's shrinking dominance in the EV market, Musk aims for
+          Cybertruck success. However, the vehicle's appeal to mainstream
+          consumers, especially progressives and environmentalists, is
+          uncertain. The shift from Tesla's original environmental focus to a
+          flagship like the Cybertruck raises questions about the company's
+          direction.
+        </p>
+
+        <p class="news-description">
+          Musk's disruptive genius was in drivetrain innovation, and Tesla needs
+          a new breakthrough. The EV market is evolving, with competitors
+          offering compelling alternatives. The Cybertruck's success hinges on
+          its uniqueness, but the lack of design copycats in four years raises
+          doubts about its long-term market appeal.
+        </p>
+
+        <p class="news-description">
+          The market for monster electric vehicles may be smaller than Musk
+          anticipates, as seen with Rivian's modest R1T sales. Despite Musk's
+          readiness to invest in vanity projects, Tesla shareholders face
+          uncertainty as the company's stock sees fluctuations.
+        </p>
+
+        <p class="news-description">
+          In conclusion, the Cybertruck's future success remains uncertain, with
+          production challenges, design criticism, and changing market dynamics.
+          Tesla's shift from environmental emphasis to unique design raises
+          questions about its strategy in a growing and competitive EV market.
+        </p>
+
+        <p class="news-author">
+          Author: SEBASTIAN TURNER | Published on: December 14, 2023
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
